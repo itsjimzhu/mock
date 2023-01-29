@@ -96,15 +96,12 @@ def random_order(n_clicks):
     # strike
     i = np.random.randint(0,5)
     k=strikes[i]
-
     combo_type='puts-over' if k>stock else ''
     combo_val= np.abs(imp-k+revcon)
 
     # type
     i = np.random.randint(0,2)
     otyp='bids' if i else 'offers'
-
-
     string=f'Customer {otyp} {combo_val:.2f} for the {k} combo'
 
     return string, f'{imp:.2f}'
