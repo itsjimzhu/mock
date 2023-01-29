@@ -43,8 +43,6 @@ def create_board():
 
 df, strikes, stock, revcon = create_board()
 
-
-
 app.layout = html.Div(style={'backgroundColor': 'white', 'textAlign': 'center'}, children=[
 
     html.H1(children='Hello Mock',),
