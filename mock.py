@@ -11,7 +11,7 @@ app = Dash()
 2. Consider width of stock market + relative size/delta of quote to add edge to each size. *Impact + Holding*
 3. Fair + Edge
 
-Being hit/lifted always implies stock = theo +/- edge
+Being hit/lifted always implies stock = theo +/- edge. Remember edge requirement
 '''
 
 def generate_table(dataframe, last_px, revcon, max_rows=10):
